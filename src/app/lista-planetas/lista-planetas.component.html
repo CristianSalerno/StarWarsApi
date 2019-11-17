@@ -1,0 +1,32 @@
+<div class="imagen" class="mb-4 text-center">
+  <img class="img-fluid " width="250px"
+    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fstar_wars1600.png&f=1&nofb=1"
+    alt="">
+  <div class="card-deck" *ngFor="let planet of arrPlanetas">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{planet.name}}</h5>
+        <p class="card-text">Diameter: {{planet.diameter}}</p>
+        <p class="card-text">Population: {{planet.population}}</p>
+        <p class="card-text">Terrain: {{planet.terrain}}</p>
+        <p class="card-text">Gravity: {{planet.gravity}}</p>
+        <p class="card-text"><small class="text-muted">Rotation: {{planet.rotation_period}}</small></p>
+      </div>
+    </div>
+  </div>
+  <button (click)="cambiarPagina(-1)" [disabled]="paginaActual === 1" class="btn  mb-2 btn-warning btn-block">Back
+  </button>
+  <button (click)="cambiarPagina(1)" [disabled]="paginaActual === numPaginas" class=" btn btn-warning btn-block">
+    Next</button>
+</div>
+
+
+
+
+<!--   Name: {{planet.name}}
+  Rotation: {{planet.rotation_period}}
+  Population: {{planet.population}}
+  Terrain: {{planet.terrain}}
+  diameter: {{planet.diameter}
+  gravity: {{planet.gravity}}
+ -->

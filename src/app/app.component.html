@@ -1,0 +1,25 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg" style="background-color: #000000; color:yellow;">
+    <a class="navbar-brand" href="https://swapi.co/">To Swapi 👨🏻‍🚀</a>
+    <div id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/planetas'">Planets 🌍</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/movies'">Movies 🎥</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/characters'">Characters 👨🏻‍🎤</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+  <footer class="mine-footer">Made with ❤️ by
+    <a href="https://github.com/CristianSalerno">Cristian Salerno</a>
+  </footer>
+</div>

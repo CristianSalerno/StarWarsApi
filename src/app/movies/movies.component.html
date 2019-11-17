@@ -1,0 +1,18 @@
+<div class="imagen" class="mb-4 text-center">
+  <img class="img-fluid " width="250px"
+    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fstar_wars1600.png&f=1&nofb=1"
+    alt="">
+  <div class="card-deck mb-2" *ngFor="let movie of arrMovies">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">{{movie.episode}}</p>
+        <p class="card-text">{{movie.opening_crawl}}</p>
+        <p class="card-text"><small class="text-muted">Director: {{movie.director}} | Producer
+            {{movie.producer}}</small>
+          <p class="card-text"><small class="text-muted">Release Date: {{movie.release_date}}</small>
+          </p>
+      </div>
+    </div>
+  </div>
+</div>

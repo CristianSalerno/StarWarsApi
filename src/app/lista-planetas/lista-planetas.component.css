@@ -1,0 +1,13 @@
+.flex div ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.card {
+  margin: 10px;
+}
+
+.card-body {
+  background: black;
+  color: rgb(255, 230, 5);
+}

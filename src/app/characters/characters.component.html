@@ -1,0 +1,19 @@
+<div class="imagen" class="mb-4 text-center">
+  <img class="img-fluid " width="250px"
+    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmaxcdn.icons8.com%2FShare%2Ficon%2FLogos%2Fstar_wars1600.png&f=1&nofb=1"
+    alt="">
+  <div class="card-deck mb-2" *ngFor="let character of arrCharacters">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{character.name}}</h5>
+        <p class="card-text">Heigth: {{character.height}}</p>
+        <p class="card-text">Birth: {{character.birth-year}}</p>
+        <p class="card-text">Gender: {{character.gender}}</p>
+      </div>
+    </div>
+  </div>
+  <button (click)="cambiarPagina(-1)" [disabled]="paginaActual === 1" class="btn  mb-2 btn-warning btn-block">Back
+  </button>
+  <button (click)="cambiarPagina(1)" [disabled]="paginaActual === numPaginas" class=" btn btn-warning btn-block">
+    Next</button>
+</div>
